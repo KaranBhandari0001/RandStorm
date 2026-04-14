@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>RandStorm</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h1>RandStorm</h1>
+
+  <label>Length</label>
+  <input type="number" id="length" value="30" min="1" max="50000">
+
+  <div class="options">
+    <label><input type="checkbox" id="uppercase" checked> A-Z</label>
+    <label><input type="checkbox" id="lowercase" checked> a-z</label>
+    <label><input type="checkbox" id="numbers" checked> 0-9</label>
+    <label><input type="checkbox" id="symbols"> Symbols</label>
+    <label class="highlight">
+      <input type="checkbox" id="noSpace"> No Space
+    </label>
+  </div>
+
+  <button id="generate">Generate</button>
+
+  <textarea id="output" placeholder="Your result..."></textarea>
+
+  <button id="copy">Copy</button>
+  <button id="clear">Clear</button>
+</div>
+
+<script src="popup.js"></script>
+</body>
+</html>
